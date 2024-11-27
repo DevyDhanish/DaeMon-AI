@@ -4,13 +4,13 @@ from colors import write, WARNING, GOOD, ERROR
 def trytoprint(res):
     try:
         if(res.status_code == 200):
-            write(str(res.json()), GOOD)
+            #write(str(res.json()), GOOD)
             return res
     except requests.exceptions.JSONDecodeError:
         return res
 
 def req(url : str, payload : dict, method : str):
-    write(str(payload), WARNING)
+    #write(str(payload), WARNING)
     match method:
         case "post":
             res = requests.post(url, params=payload)

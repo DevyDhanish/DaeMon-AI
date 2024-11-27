@@ -6,13 +6,18 @@ GOOD = "green"
 WARNING = "yellow"
 
 art = f'''
-  _____   ______  _____  _______  _____  _______
- |_____] |_____/ |     | |  |  | |_____]    |   
- |       |    \_ |_____| |  |  | |          |   
-
+ ______         _                 _____                                  _ 
+|  ____|       | |               |  __ \                                | |  
+| |__    _ __  | |_   ___  _ __  | |__) | _ __   ___   _ __ ___   _ __  | |_ 
+|  __|  | '_ \ | __| / _ \| '__| |  ___/ | '__| / _ \ | '_ ` _ \ | '_ \ | __|
+| |____ | | | || |_ |  __/| |    | |     | |   | (_) || | | | | || |_) || |_ 
+|______||_| |_| \__| \___||_|    |_|     |_|    \___/ |_| |_| |_|| .__/  \__|
+                                                                 | |         
+                                                                 |_|         
 '''
 
 skullart = f'''
+
           .                                                      .
         .n                   .                 .                  n.
   .   .dP                  dP                   9b                 9b.    .
@@ -34,7 +39,8 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
                               X. 9  `   '  P )X
                               `b  `       '  d'
                                `             '
-Daemon - By Dhanish, Vishwas, Atishobhit
+
+Daemon.AI
 '''
 
 # Initialize colorama
@@ -45,9 +51,12 @@ def write(text, color):
     match color:
         case "red":
             print(colorama.Fore.RED + text)
+            pass
         case "green":
             print(colorama.Fore.GREEN + text)
+            pass
         case "yellow":
             print(colorama.Fore.YELLOW + text)
+            pass
         case _:
             print(text)
