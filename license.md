@@ -1,0 +1,1 @@
+From the screen to the ring to the pen to the king. 🗣️🗣️🔥🔥🗣️🗣️
