@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Daemon AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="credits">
+        <span>
+            Daemon.AI 2024 <br>
+            Made by Viswash Raj Dewangan, K.M Dhanish & Atishobhit Singh Tilakchandi
+        </span>
+    </div>
+    <div class="main">
+        <div class="input_txt">
+            <div class="desc_box">
+                <form action="/generate" method="post">
+                <span>Description 📃</span>
+                <textarea id="desc_box_txt" name="desc_box_txt"></textarea>
+                <select id="style_op" name="style_op">
+                    <option value="no style">No style</option>
+                    <option value="waifu">Waifu</option>
+                    <option value="cinematic">Cinematic</option>
+                    <option value="digital_art">Digital art</option>
+                    <option value="anime">Anime</option>
+                    <option value="Disney style">Disney style</option>
+                    <option value="DSLR">DSLR</option>
+                  </select>
+                  <button class="gen_btn" id="gen_btn" type="submit" onclick="startImageGeneration()" >🌟Generate</button>
+                </form>
+            </div>
+            <div class="rst_img">
+                <span>{{prompt}}</span>
+                <img id="load_scr" src="{{ url_for('static', filename=image_to_show)}}">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function startImageGeneration() {
+            // Change the image to loading GIF
+            const loadPath = "/static/load.gif";
+            const img = document.getElementById("load_scr");
+            img.src = loadPath; // Show loading GIF
+            // Trigger the backend to generate the image (AJAX request)
+        }
+</script>
+</html>

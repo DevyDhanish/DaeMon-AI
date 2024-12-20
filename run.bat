@@ -1,2 +1,2 @@
 @echo off
-conda activate && python main.py
+conda activate && python frontend.py

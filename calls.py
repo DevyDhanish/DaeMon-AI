@@ -4,7 +4,7 @@ from colors import write, WARNING, GOOD, ERROR
 def trytoprint(res):
     try:
         if(res.status_code == 200):
-            #write(str(res.json()), GOOD)
+            write(str(res.json()), GOOD)
             return res
     except requests.exceptions.JSONDecodeError:
         return res

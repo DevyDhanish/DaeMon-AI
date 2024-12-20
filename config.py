@@ -16,6 +16,10 @@ def set_adaccesscode(code : str):
     global ADACCESSCODE
     ADACCESSCODE = code
 
+def set_user_key(key : str):
+    global USER_KEY
+    USER_KEY = key
+
 def get_check_generator_ownership_payload():
     return {
         "email" : "kmdhanish2018@gmail.com",

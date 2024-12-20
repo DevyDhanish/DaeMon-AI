@@ -1,0 +1,81 @@
+body{
+    background-color: #212121;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Aligning the input section and image side by side */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.credits{
+    color: #404040;
+    margin: 2vh;
+    margin-bottom: 10vh;
+}
+
+.input_txt {
+    margin: 2vh;
+    margin-left: 12rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: row; /* Aligning the text area and button in a column */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5vh;
+}
+
+.rst_img{
+    height: 668px;
+    width: 412;
+}
+
+.rst_img span{
+    color: white;
+}
+
+.text {
+    width: 300px; /* Adjust width of the text area as needed */
+    height: 100px; /* Adjust height of the text area */
+    margin-bottom: 10px; /* Adding space between the text area and the button */
+}
+
+.gen_btn {
+    padding: 10px 20px;
+    background-color: #ffe48a; /* Change the button color as needed */
+    font-size: 20px;
+    color: #313131;
+    border: none;
+    cursor: pointer;
+}
+
+.gen_btn:hover {
+    background-color: #313131; /* Adding hover effect for the button */
+    color: #ffe48a;
+}
+
+.desc_box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.desc_box select{
+background-color: #313131;
+color: white;
+}
+
+.desc_box span{
+    color: white;
+}
+
+.desc_box textarea{
+    height: 10rem;
+    width: 40rem;
+    background-color: #313131;
+    color: white;
+}
