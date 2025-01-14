@@ -22,7 +22,7 @@ def set_user_key(key : str):
 
 def get_check_generator_ownership_payload():
     return {
-        "email" : "kmdhanish2018@gmail.com",
+        "email" : "{your email}",
         "generatorName" : "ai-character-generator",
         "sessionToken" : SESSION_TOKEN
     }
